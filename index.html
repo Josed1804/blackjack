@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="anonymous">
+    <title>BlackJack</title>
+</head>
+<body>
+    <header class="titulo">BlackJack</header>
+    <div class="container">
+        <div class="row mt-2 mb-4">
+            <div class="col text-center">
+                <input type="text" id="nombreJugador" placeholder="Nombre del Jugador" class="form-control mb-2">
+                <button class="btn btn-danger" id="btnNuevo">Nuevo Juego</button>
+                <button class="btn btn-primary" id="btnPedir" disabled>Pedir Carta</button>
+                <button class="btn btn-primary" id="btnDetener" disabled>Detener</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <h2 id="nombreJugadorTitulo">Jugador - <small id="puntosJugador">0</small></h2>
+                <div id="jugador-cartas"></div>
+            </div>
+            <div class="col-12 col-md-6">
+                <h2>Computadora - <small id="puntosComputadora">0</small></h2>
+                <div id="computadora-cartas"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+    <script src="js/juego.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
